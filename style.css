@@ -1,0 +1,290 @@
+/* General reset and font setup */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+/* Body layout and background */
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100%;
+  font-size: 1.6rem;
+  background-color: #f4f6fa;
+  color: #222;
+}
+
+/* Header styling */
+.header {
+  font-size: 2.5rem;
+  text-align: center;
+  padding: 20px 0;
+  background-color: #e1ecf4;
+  color: #003b5c;
+}
+
+/* Divider line */
+hr {
+  margin: 10px auto;
+  width: 70%;
+  height: 1px;
+  background-color: #ccc;
+  border: none;
+}
+
+/* Main quiz area */
+.main {
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  margin: 20px;
+}
+
+/* Level/timer/question counter container */
+.level-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: hsl(210, 64%, 95%);
+  border-radius: 6px;
+  padding: 20px;
+  margin: 10px 20px;
+}
+
+/* Quiz question and options container */
+.quiz-container {
+  padding: 20px;
+  margin: 20px;
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+/* Question text container */
+.question-container {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+/* Individual question padding */
+.question {
+  padding: 20px;
+}
+
+/* Answer options layout */
+.options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+}
+
+/* Option button styling */
+.option {
+  flex: 1 1 calc(50% - 10px);
+  min-width: 120px;
+  padding: 10px 15px;
+  font-size: 1.6rem;
+  border: 2px solid hsl(208, 61%, 75%);
+  border-radius: 6px;
+  background-color: hsl(208, 100%, 97%);
+  cursor: pointer;
+  text-align: left;
+  transition: all 0.2s ease;
+}
+
+/* Option hover state */
+.option:hover {
+  background-color: #d7ecff;
+}
+
+/* Option active (click) state */
+.option:active {
+  background-color: #bddfff;
+}
+
+/* Navigation buttons container */
+.buttons-container {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+/* Button styling inside navigation */
+.buttons-container button {
+  padding: 10px 20px;
+  background-color: #005c99;
+  color: white;
+  font-size: 1.5rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+/* Button hover state */
+.buttons-container button:hover {
+  background-color: #007acc;
+}
+
+/* Button active (click) state */
+.buttons-container button:active {
+  background-color: #006bb3;
+}
+
+/* Footer (End Quiz button) */
+.footer {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  padding: 30px;
+  margin: 0 20px 20px 0;
+  z-index: 10;
+}
+
+/* Footer button styling */
+.footer button {
+  padding: 12px 24px;
+  background-color: #cc2936;
+  color: white;
+  font-size: 1.5rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+/* Footer button hover state */
+.footer button:hover {
+  background-color: #e0434d;
+}
+
+/* Footer button active (click) state */
+.footer button:active {
+  background-color: #b2222e;
+}
+
+/* Results summary styling */
+#results {
+  max-width: 600px;
+  margin: 40px auto;
+  background: #f9f9f9;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+  padding: 32px 24px;
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+/* Results title */
+#results h2 {
+  text-align: center;
+  color: #2c3e50;
+  margin-bottom: 16px;
+}
+
+/* Score or summary paragraph */
+#results p {
+  text-align: center;
+  font-size: 1.2em;
+  margin-bottom: 24px;
+}
+
+/* Ordered list of answers */
+#results ol {
+  padding-left: 20px;
+}
+
+/* Individual result item styling */
+#results li {
+  margin-bottom: 18px;
+  background: #fff;
+  border-radius: 8px;
+  padding: 14px 16px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.04);
+}
+
+/* Highlight for labels/titles */
+#results strong {
+  color: #34495e;
+}
+
+/* User answer styling */
+#results .user-answer {
+  font-weight: bold;
+}
+
+/* Correct answer color */
+#results .correct {
+  color: #27ae60;
+}
+
+/* Incorrect answer color */
+#results .incorrect {
+  color: #e74c3c;
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+  /* Adjust font size for smaller screens */
+  body {
+    font-size: 1.4rem;
+  }
+
+  /* Smaller header text and padding */
+  .header {
+    font-size: 2rem;
+    padding: 15px 0;
+  }
+
+  /* Reduced padding in main container */
+  .main {
+    padding: 10px;
+  }
+
+  /* Stack level info vertically */
+  .level-container {
+    flex-direction: column;
+    gap: 5px;
+    font-size: 1.3rem;
+    padding: 10px;
+  }
+
+  /* Adjust question font size */
+  .question-container {
+    font-size: 1.6rem;
+  }
+
+  /* Stack options full-width on small screens */
+  .option {
+    flex: 1 1 100%;
+    font-size: 1.4rem;
+    padding: 10px;
+  }
+
+  /* Stack buttons vertically */
+  .buttons-container {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .buttons-container button {
+    width: 80%;
+    font-size: 1.4rem;
+  }
+
+  /* Center footer and expand button */
+  .footer {
+    justify-content: center;
+    padding: 15px;
+    margin-right: 0;
+  }
+
+  .footer button {
+    width: 100%;
+    font-size: 1.4rem;
+  }
+}

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Character encoding -->
+    <meta charset="UTF-8" />
+    <!-- Responsive design for all devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Page title shown in browser tab -->
+    <title>Quiz</title>
+    <!-- External CSS file for styling -->
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+
+  <body>
+    <!-- Header/title of the quiz page -->
+    <div class="header">Quiz</div>
+
+    <!-- Main content area -->
+    <div class="main">
+      <!-- Container for quiz level/timer/question number display -->
+      <div class="level-container">
+        <!-- Shows current question count -->
+        <div class="question-counter">1 of 10 Questions</div>
+        <!-- Reserved divs (can be used for level, score, or icons) -->
+        <div></div>
+        <div></div>
+        <div></div>
+        <!-- Timer display -->
+        <div id="timer" class="time-container"></div>
+      </div>
+
+      <!-- Main quiz card container -->
+      <div class="quiz-container">
+        <!-- Question text and options go here -->
+        <div class="question-container">
+          <!-- Question will be dynamically inserted here -->
+          <div class="question"></div>
+          <!-- Answer options will be dynamically inserted here -->
+          <div class="options"></div>
+        </div>
+
+        <!-- Navigation buttons -->
+        <div class="buttons-container">
+          <button>Previous</button>
+          <button>Submit</button>
+          <button>Next</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer with End Quiz button -->
+    <div class="footer">
+      <button>End Quiz</button>
+    </div>
+
+    <!-- Hidden results summary, shown after quiz ends -->
+    <div id="results" style="display: none"></div>
+
+    <!-- Link to external JavaScript module -->
+    <script type="module" src="./quiz.js"></script>
+  </body>
+</html>
