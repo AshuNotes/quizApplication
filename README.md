@@ -12,93 +12,87 @@ _DURATION_ : 4 WEEKS
 
 _MENTOR_: NEELA SANTOSH
 
-# 💬 CodTech Chat Application
+# 📚 Quiz Application
 
-A modern, responsive, and theme-switchable chat interface built with **React** and **Vite**. This application simulates a simple chatbot interaction and is ideal for internship projects, frontend demos, or learning purposes.
+A simple and interactive web-based quiz application built using **HTML**, **CSS**, and **JavaScript**. This project is ideal for beginners to understand DOM manipulation, user interaction, and basic JS logic.
 
 ---
 
 ## 🌟 Features
 
-- 💡 **Light & Dark Theme Toggle**
-- ✨ **Chat Bubble Design with Smooth Animations**
-- 💬 **Simulated Bot Responses with Typing Effect**
-- 📱 **Mobile-First Responsive Layout**
-- 📌 **Fixed Header and Footer Input Bar**
-- 🎨 **Modern UI with Gradient Backgrounds**
-- ⚛️ **Built using React + Vite for fast performance**
+- 🧠 **Multiple Choice Questions**
+- ⏱️ **Real-time Score Tracking**
+- 🔁 **Dynamic Question Loading**
+- ✔️ **Immediate Feedback on Selection**
+- 🎨 **Responsive and Clean UI**
+- 📄 **Modular Code Structure for Easy Customization**
 
 ---
 
 ## 🖥️ Technologies Used
 
-- **React.js** – Frontend UI and component logic
-- **Vite** – Fast dev server and build tool
-- **JavaScript (ES6)** – Dynamic behavior and bot logic
-- **CSS3** – Custom styling and theme design
-- **HTML5** – Page structure and rendering
+- **HTML5** – Structure of the application
+- **CSS3** – Styling and layout
+- **JavaScript (ES6)** – Logic for quiz functionality
+- _(No frameworks used – pure vanilla JavaScript!)_
 
 ---
 
 ## 📂 Project Structure
 
 ```
-chatApplication_IT2/
-├── .gitignore            # Files/folders ignored by Git
-├── README.md             # Project documentation
-├── eslint.config.js      # ESLint rules and config
-├── index.html            # Template HTML file used by Vite
-├── package.json          # Project metadata and dependencies
-├── package-lock.json     # Auto-generated dependency lockfile
-└── vite.config.js        # Vite-specific config
+quizApplication/
+├── index.html       # Main HTML structure
+├── style.css        # Stylesheet for layout and design
+├── questions.js     # Quiz questions array (data)
+├── quiz.js          # Core logic for quiz behavior
+└── README.md        # Project documentation
 ```
 
 ---
 
 ## 🧠 How It Works
 
-- Users type messages into the input bar at the bottom.
-- Messages appear in the chat area, aligned right.
-- The chatbot displays a "typing..." animation before replying with pre-defined responses based on keywords like `hello`, `project`, `task`, etc.
-- A toggle button allows users to switch between **light** and **dark** mode instantly.
+1. **Questions** are defined in `questions.js` as a JavaScript array.
+2. `quiz.js` handles the quiz logic:
+   - Loads each question and options dynamically.
+   - Captures user input and checks answers.
+   - Tracks score and displays final result.
+3. The user interface is updated in real-time based on user interaction.
+4. Clean styling provided in `style.css` to ensure readability and responsiveness.
 
 ---
 
-## 📸 Output
+## 📸 Sample Output
 
-![Chat UI Preview](https://github.com/user-attachments/assets/f810f93c-58f3-4a50-b921-29adfe1015ac)
+> _(Include a screenshot or GIF of your quiz UI here)_  
+> Example:
+
+```
+[Quiz Screenshot Here]
+```
 
 ---
 
 ## 🚀 Getting Started
 
-1. **Clone the repository**:
+1. **Clone the Repository**:
 
-   ```bash
-   git clone https://github.com/AshuNotes/chatApplication_IT2.git
-   cd chatApplication_IT2
-   ```
+```bash
+git clone https://github.com/ashunotes/quizApplication.git
+cd quizApplication
+```
 
-2. **Install dependencies**:
+2. **Open in Browser**:
 
-   ```bash
-   npm install
-   ```
-
-3. **Run the development server**:
-
-   ```bash
-   npm run dev
-   ```
-
-4. Open `http://localhost:5173` in your browser and start chatting!
+No server required — just open `index.html` in any modern browser.
 
 ---
 
 ## 🧾 License
 
-This project is for educational and internship purposes. Feel free to modify and enhance it for personal or learning use.
+This project is open-source and intended for learning and portfolio purposes. Feel free to enhance or adapt it as needed.
 
 ---
 
-> Built with ❤️ by Asish for the **Internship Task 2**
+> Built with ❤️ by Asish for learning and practice.
