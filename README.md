@@ -1,19 +1,5 @@
 ## REAL-TIME CHAT APPLICATION
 
-_COMPANY_ : CODTECH IT SOLUTIONS
-
-_NAME_ : ATHOTA ASISH
-
-_DOMAIN_ : FRONT END DEVELOPMENT
-
-_INTERN ID_: CT04DG21
-
-_DURATION_ : 4 WEEKS
-
-_MENTOR_: NEELA SANTOSH
-
-# 📚 Quiz Application
-
 A simple and interactive web-based quiz application built using **HTML**, **CSS**, and **JavaScript**. This project is ideal for beginners to understand DOM manipulation, user interaction, and basic JS logic.
 
 ---
